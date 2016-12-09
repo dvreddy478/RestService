@@ -12,7 +12,7 @@ public class MySqlConnection {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample_db", "root", "lavanya@123");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample_db", "root", "password");
 			Statement stmt = con.createStatement();
 			
 			ResultSet rs = stmt.executeQuery("select * from user_t");
